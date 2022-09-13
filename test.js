@@ -1,6 +1,6 @@
 let testArray = ["add", "water","wallet", "accessibility", "print", "power", "pricetag", "radio", "rainy", "play", "woman", "warning", "walk", "wifi", "watch", "train",
 "wine",
-"videocam","unlink", "tv", "trophy","umbrella","triangle", "trending-up", "trending-down", "trash", "transgender", "trail-sign", "toggle", "today", "timer", "ticket", "thunderstorm", "thumbs-up", "time", "thumbs-down","thermometer", "text", "terminal", "man", "telescope", "tennisball", "sync", "sunny", "subway", "storefront", "stop", "stopwatch",
+"videocam","unlink", "tv", "trophy","umbrella","triangle", "trending-up", "trending-down", "trash", "transgender", "trail-sign", "toggle", "today", "timer", "ticket", "thunderstorm", "thumbs-up", "time", "thumbs-down","thermometer", "terminal", "man", "telescope", "tennisball", "sync", "sunny", "subway", "storefront", "stop", "stopwatch",
 "person", "alarm", "airplane", "albums", "alert",
 "american-football",
 "analytics",
