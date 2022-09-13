@@ -1,3 +1,10 @@
-img { 
-width: 5%;
-}
+*{
+    box-sizing: border-box;
+  }
+  img { 
+  width: 8%;
+  grid-template-columns: repeat(12, 1fr)
+  }
+  .container {
+    grid-template-rows: [row1-start] 8% [row1-end row2-start]8% [row2-end];
+  }
