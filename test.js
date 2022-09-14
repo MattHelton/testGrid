@@ -1,43 +1,102 @@
-let testArray = ["add", "water","wallet", "accessibility", "print", "power", "pricetag", "radio", "rainy", "play", "woman", "warning", "walk", "wifi", "watch", "train",
-"wine",
-"videocam","unlink", "tv", "trophy","umbrella","triangle", "trending-up", "trending-down", "trash", "transgender", "trail-sign", "toggle", "today", "timer", "ticket", "thunderstorm", "thumbs-up", "time", "thumbs-down","thermometer", "terminal", "man", "telescope", "tennisball", "sync", "sunny", "subway", "storefront", "stop", "stopwatch",
-"person", "alarm", "airplane", "albums", "alert",
-"american-football",
-"analytics",
-"aperture",
-"apps",
-"archive",
-"arrow-back",
-"arrow-down",
-"arrow-up",
-"arrow-forward",
-"arrow-redo",
-"arrow-undo",
-"at",
-"attach",
-"backspace",
-"bag-add",
-"bag-check",
-"bag-handle",
-"bag",
-"balloon",
-"ban",
-"bandage",
-"bar-chart",
-"barbell",
-"barcode",
-"baseball",
-"basketball",
-"basket",
-"battery-charging",
-"battery-full",
-"battery-half",
-"beaker",
-"bed",
-"beer"
+let testArray = [
+  "2-0-1",
+  "3-1-1",
+  "3-1-2",
+  "3-1-3",
+  "3-1-4",
+  "3-2-1",
+  "3-2-2",
+  "3-2-3",
+  "3-2-4",
+  "4-1-1",
+  "4-1-2",
+  "4-1-3",
+  "4-1-4",
+  "4-2-1",
+  "4-2-2",
+  "4-3-1",
+  "5-1-1",
+  "5-1-2",
+  "5-2-2",
+  "5-2-3",
+  "5-2-4",
+  "6-0-2",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank",
+  "Blank"
+]
+
+let secondArray = [
+  "2-0-1",
+  "3-1-1",
+  "3-1-2",
+  "3-1-3",
+  "3-1-4",
+  "3-2-1",
+  "3-2-2",
+  "3-2-3",
+  "3-2-4",
+  "4-1-1",
+  "4-1-2",
+  "4-1-3",
+  "4-1-4",
+  "4-2-1",
+  "4-2-2",
+  "4-3-1",
+  "5-1-1",
+  "5-1-2",
+  "5-2-2",
+  "5-2-3",
+  "5-2-4",
+  "6-0-2"
 ]
 let els = document.getElementsByClassName("testing")
 let lastNumber;
+let quickly;
 function randomItem(arr) {
   ranNum = Math.floor(Math.random() * (arr.length))
   if (ranNum === lastNumber ){
@@ -53,7 +112,7 @@ function generateRanItemInHtml(el, arr) {
   if (fileName === undefined) {
     generateRanItemInHtml(el, arr)
   } else {
-    el.src = `./svg/${fileName}.svg`
+    el.src = `./icons/${fileName}.svg`
   }
 }
 
@@ -68,12 +127,16 @@ function clockTick() {
   generateRanItemInHtml(els[newIndex], testArray)
 }
 
-// function populateGrid(elList, arr) {
-  //   for (let index in elList) {
-  //     generateRanItemInHtml(elList[index], arr) 
-  //   }
+function populateGrid(elList, arr) {
+    for (let index in elList) {
+      generateRanItemInHtml(elList[index], arr) 
+    }
+  }
+   populateGrid(els, testArray)
 
-    // document.getElementById("generate").addEventListener("click", function  (){
-    
-    // })
-  // }
+  //  function quickRandom() {
+  //   if(ranIndex < 3){
+
+  //     generateRanItemInHtml(els[newIndex], secondArray)
+  //   }
+  //  }
